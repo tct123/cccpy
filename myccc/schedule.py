@@ -2,8 +2,8 @@ import requests
 
 
 class Schedule:
-    def __init__(self, url="https://api.media.ccc.de/"):
-        self.url = url
+    def __init__(self):
+        pass
 
     def getvideo():
         pass
