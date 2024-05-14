@@ -4,7 +4,7 @@ class Media:
         self.url = url
         self.r = requests.get(url=url)
         self.data = self.r.json()["recordings"]
-        print(len(self.data))
+        print(self.data)
 
 if __name__=="__main__":
     obj = Media()
