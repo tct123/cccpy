@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "myccc"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
 readme = "README.md"
