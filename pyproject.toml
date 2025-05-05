@@ -1,15 +1,18 @@
-[tool.poetry]
+[project]
 name = "myccc"
 version = "0.3.0"
 description = ""
-authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
+authors = [
+    { name = "tct123", email = "42028373+tct123@users.noreply.github.com" },
+]
 readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["requests"]
 
-[tool.poetry.dependencies]
-python = "^3.8"
-requests = "^2.31.0"
+[tool.poetry]
+packages = [{ include = "myccc", from = "src" }]
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
