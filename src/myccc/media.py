@@ -10,8 +10,15 @@ class Media:
         self.url = url
         self.r = requests.get(url=url)
         self.data = self.r.json()["recordings"]
-        print(self.data)
+
+    def get_media(self):  # mime_type
+        media = self.data
+        for i in self.data:
+            if bool(i["high_quality"]):
+                print(i["recording_url"])
+        # print(media)
 
 
 if __name__ == "__main__":
     obj = Media()
+    obj.get_media()
