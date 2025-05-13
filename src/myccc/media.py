@@ -15,7 +15,7 @@ class Media:
         media = self.data
         for i in self.data:
             if bool(i["high_quality"]):
-                print(i["recording_url"])
+                print({recording: i["recording_url"], metadata: ""})
         # print(media)
 
 
