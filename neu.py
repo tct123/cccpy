@@ -7,3 +7,4 @@ myjson = r.json()
 conferences = myjson["conferences"]
 for i in range(len(conferences)):
     print(f"Acronym {conferences[i]["acronym"]} - {conferences[i]["acronym"]}")
+    print(f"Title {conferences[i]["title"]} - {conferences[i]["title"]}")
